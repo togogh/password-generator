@@ -173,3 +173,11 @@ input[type="checkbox"]:checked {
     border-radius: 6px;
     border: 2px solid #273549;
 }
+
+#messages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

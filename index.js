@@ -35,6 +35,7 @@ function generatePasswords() {
     }
     passwordOne.textContent = generatePassword(characters)
     passwordTwo.textContent = generatePassword(characters)
+    message.textContent = "Click on password to copy."
 }
 
 let message = document.getElementById("message");
@@ -49,5 +50,6 @@ function copyToClipboard(num) {
         message.textContent = "No passwords generated yet."
     } else {
         window.prompt("Copy to clipboard: Ctrl+C Enter (or CMD+C Enter on Mac)", passwordText);
+        message.textContent = "Copied password #" + num + " to clipboard."
     }
 }
