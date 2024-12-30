@@ -142,6 +142,10 @@ input[type="checkbox"]:checked {
     line-height: 22px;
 }
 
+#generated {
+    display: none;
+}
+
 #passwords {
     display: flex;
     flex-direction: row;

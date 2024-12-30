@@ -9,6 +9,7 @@ slider.oninput = function() {
 let numbersCheckbox = document.getElementById("includeNumbers");
 let symbolsCheckbox = document.getElementById("includeSymbols");
 
+let generatedSection = document.getElementById("generated");
 let passwordOne = document.getElementById("passwordOne");
 let passwordTwo = document.getElementById("passwordTwo");
 
@@ -36,6 +37,10 @@ function generatePasswords() {
     passwordOne.textContent = generatePassword(characters)
     passwordTwo.textContent = generatePassword(characters)
     message.textContent = "Click on password to copy."
+    generated.style.display = 'flex';
+    generated.style.flexDirection = 'column';
+    generated.style.justifyContent = 'space-evenly';
+    generated.style.gap = '20px';
 }
 
 let message = document.getElementById("message");

@@ -7,11 +7,11 @@
     </head>
     <body>
         <div id="main">
-            <div id="headers">
+            <section id="headers">
                 <h1>Generate a <strong>random password</strong></h1>
                 <h2>Never use an insecure password again.</h2>
-            </div>
-            <div id="form">
+            </section>
+            <section id="form">
                 <div class="controls">
                     <label for="passwordLengthSlider">Password length:</label>
                     <input type="range" id="passwordLengthSlider" name="passwordLengthSlider" min="5" max="15" value="15" class="slider" step=1>
@@ -28,17 +28,19 @@
                     </div>
                 </div>
                 <button id='generate-btn' onclick="generatePasswords()">Generate passwords</button>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div id="passwords">
-                <button class="password-btn" id="passwordOne" onclick="copyToClipboard('1')"></button>
-                <button class="password-btn" id="passwordTwo" onclick="copyToClipboard('2')"></button>
-            </div>
-            <div id="messages">
-                <p id='message'></p>
-            </div>
+            </section>
+            <section id="generated">
+                <div>
+                    <hr>
+                </div>
+                <div id="passwords">
+                    <button class="password-btn" id="passwordOne" onclick="copyToClipboard('1')"></button>
+                    <button class="password-btn" id="passwordTwo" onclick="copyToClipboard('2')"></button>
+                </div>
+                <div id="messages">
+                    <p id='message'></p>
+                </div>
+            </section>
         </div>
         <script src="index.js"></script>
     </body>
