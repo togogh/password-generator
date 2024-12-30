@@ -9,16 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: left;
     row-gap: 40px;
-    /* max-width: 50%; */
+    max-width: 500px;
 }
 
 #headers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     row-gap: 20px;
 }
 
@@ -30,7 +30,7 @@ h1 {
     letter-spacing: -0.05em;
     margin: 0;
     line-height: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 strong {
@@ -49,15 +49,15 @@ h2 {
 #form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    row-gap: 10px;
+    justify-content: left;
+    align-items: flex-start;
+    /* row-gap: 10px; */
 }
 
 .controls {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     column-gap: 20px;
     row-gap: 0px;
@@ -96,8 +96,13 @@ h2 {
 .checkboxes {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+label.forCheckbox {
+    margin: 20px 0;
 }
 
 input[type="checkbox"] {
@@ -107,7 +112,7 @@ input[type="checkbox"] {
     background: white;
     border: 1px solid #10B981;
     border-radius: 6px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 input[type="checkbox"]:checked {
@@ -121,7 +126,7 @@ input[type="checkbox"]:checked {
 }
 
 #generate-btn {
-    margin: 10px 0;
+    margin: 20px 0 0;
     background: #10B981;
     /* width: 20%; */
     color: white;
