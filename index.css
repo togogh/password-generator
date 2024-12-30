@@ -96,7 +96,7 @@ h2 {
 .checkboxes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     column-gap: 40px;
 }
@@ -189,4 +189,5 @@ input[type="checkbox"]:checked {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color: #6B7280;
 }
